@@ -92,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
             Intent mapWebIntent = new Intent(Intent.ACTION_VIEW, mapWebUri);
             startActivity(mapWebIntent);
         }
-
     }
     public void  sendtoAzur(){
 
