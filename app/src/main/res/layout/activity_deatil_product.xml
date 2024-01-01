@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeatilProduct">
+    <ImageView
+        android:layout_width="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/store1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/titre"
+        android:layout_height="30dp"
+        android:src="@drawable/arrowleft"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/arrow"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:textSize="20dp"
+    android:id="@+id/titre"
+    android:padding="20dp"
+    android:textColor="@color/black"
+    android:text="Detail Product"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/img5"
+        app:layout_constraintTop_toBottomOf="@+id/titre"
+        android:id="@+id/store1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/store1"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/name"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:text="Air Pod Max By Apple \n1500,99 $"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:textSize="20dp"
+        android:id="@+id/color"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:text="chose the color"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/colorpick"
+        app:layout_constraintTop_toBottomOf="@+id/color"
+        android:id="@+id/colorpick"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorpick"
+        android:textSize="20dp"
+        android:id="@+id/desc"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:text="Description of the product"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc"
+        android:textSize="17dp"
+        android:id="@+id/loren"
+        android:paddingLeft="15dp"
+        android:paddingRight="8dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore .Excepteur sint occaecat  "/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Add To Cart"
+        app:layout_constraintTop_toBottomOf="@+id/loren"
+        android:textSize="10dp"
+        app:cornerRadius="10dp" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buy"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintLeft_toRightOf="@+id/add"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Buy Now"
+        app:layout_constraintTop_toBottomOf="@+id/loren"
+        android:textSize="10dp"
+        app:cornerRadius="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
